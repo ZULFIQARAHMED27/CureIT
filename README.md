@@ -1,4 +1,4 @@
-# CureIT
+# CureIT❤️‍🩹
 
 CureIT is an intelligent healthcare chatbot designed to assist users by identifying ailments based on symptoms and providing remedies. Its multi-symptom handling capability ensures a comprehensive and user-friendly experience, making healthcare advice more accessible.
 
