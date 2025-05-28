@@ -40,15 +40,6 @@ CureIT is an intelligent healthcare chatbot designed to assist users by identify
 2. Enter your symptoms (e.g., "fever, headache, cough").
 3. Review the ailments and remedies provided by CureIT.
 
----
-
-## Technologies Used
-- **Backend**: Python (Flask)
-- **Frontend**: HTML, CSS, JavaScript
-- **AI/ML Framework**: TensorFlow / PyTorch (based on implementation)
-- **Database**: SQLite / MongoDB
-
----
 
 ## Contributing
 We welcome contributions to improve CureIT. Please follow these steps:
