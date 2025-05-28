@@ -68,31 +68,7 @@ We welcome contributions to improve CureIT. Please follow these steps:
    ```
 5. Create a Pull Request.
 
----
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Support
-For any issues or queries, please reach out to:
-- Email: support@cureit.com
-- GitHub Issues: [CureIT Issues](https://github.com/your-username/CureIT/issues)
-
----
-
-## Roadmap
-- Integration with wearable devices.
-- Real-time health monitoring.
-- Enhanced NLP capabilities for better symptom understanding.
-- Multilingual support.
-
----
-
-## Acknowledgements
-- Inspired by modern healthcare challenges.
-- Built using open-source tools and frameworks.
 - Special thanks to the developer community for their support.
 
 ---
