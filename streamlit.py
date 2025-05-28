@@ -273,18 +273,31 @@ def get_remedies(user_input):
             })
     return remedies
 
-# Streamlit application
-st.title("RemedyAI")
+# Streamlit UI
+st.title("CureIT")
+st.subheader("Identify ailments and get remedies")
 
 # User input for symptoms
-user_input = st.text_input("Describe your symptoms:")
+user_symptoms = st.text_input("Enter your symptoms separated by commas (e.g., 'cough, fever'):")
 
-if user_input:
-    remedies = get_remedies(user_input)
-    if remedies:
-        for remedy in remedies:
-            st.subheader(f"Remedies for {remedy['ailment']}")
-            st.write("**Natural Remedy:**", remedy["natural_remedy"])
-            st.write("**Medicinal Suggestion:**", remedy["medicinal_suggestion"])
+if user_symptoms:
+    user_symptoms_list = [symptom.strip().lower() for symptom in user_symptoms.split(",")]
+    matched_ailments = []
+
+    # Matching symptoms to ailments
+    for ailment, details in ailment_database.items():
+        if any(symptom in user_symptoms_list for symptom in details["symptoms"]):
+            matched_ailments.append({
+                "ailment": ailment,
+                "natural_remedy": details["natural_remedy"],
+                "medicinal_suggestion": details["medicinal_suggestion"]
+            })
+
+    if matched_ailments:
+        st.subheader("Possible Ailments and Remedies")
+        for ailment in matched_ailments:
+            st.markdown(f"### {ailment['ailment'].capitalize()}")
+            st.markdown(f"**Natural Remedy:** {ailment['natural_remedy']}")
+            st.markdown(f"**Medicinal Suggestion:** {ailment['medicinal_suggestion']}")
     else:
-        st.write("No remedies found for the symptoms provided.")
+        st.warning("No matching ailments found. Please check your symptoms or consult a healthcare professional.")
