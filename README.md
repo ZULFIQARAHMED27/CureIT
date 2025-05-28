@@ -8,7 +8,6 @@ CureIT is an intelligent healthcare chatbot designed to assist users by identify
 - **Multi-Symptom Handling**: Identify multiple ailments in a single query.
 - **Remedy Suggestions**: Provide practical remedies for identified conditions.
 - **User-Friendly Interface**: Simplified design for easy navigation and quick access to information.
-- **AI-Driven Insights**: Leverages the latest advancements in AI for accurate results.
 
 ---
 
