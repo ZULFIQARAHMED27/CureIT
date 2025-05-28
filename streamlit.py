@@ -1,8 +1,5 @@
 import streamlit as st
 
-# Updated code to handle multiple ailments
-
-# Further expanded ailment database with additional common ailments
 ailment_database = {
     "cough": {
         "symptoms": ["cough"],
